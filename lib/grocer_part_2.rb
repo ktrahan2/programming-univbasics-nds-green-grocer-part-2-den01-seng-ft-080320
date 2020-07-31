@@ -32,7 +32,13 @@ end
   #return new array that looks like (single avocado item at normal price, normal kale, avocado with coupon count 2)
 
 def apply_clearance(cart)
-
+  counter = 0
+  while counter < cart.length
+    if cart[counter][:clearance]
+      cart[counter][:price] = (cart[counter][:price] - (cart[counter][:price] * 0.2))
+    end
+    counter += 1
+  end  
 end
 
 def checkout(cart, coupons)
