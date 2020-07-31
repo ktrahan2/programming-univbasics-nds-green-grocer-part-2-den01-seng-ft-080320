@@ -1,9 +1,9 @@
 require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
-  # Consult README for inputs and outputs
-  #
-  # REMEMBER: This method **should** update cart
+  #cart is an array of hashes
+  #coupons is an array of coupon hashes
+  #return new array that has a mix of items hashes and where applicable
 end
 
 def apply_clearance(cart)
