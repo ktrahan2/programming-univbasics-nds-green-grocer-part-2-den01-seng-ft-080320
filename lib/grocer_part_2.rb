@@ -19,16 +19,17 @@ def apply_coupons(cart, coupons)
           :clearance => cart_item[:clearance]
         }
         cart << cart_item_with_coupon
+        cart_item[:count] -= coupons[count][:num]
       end
     end
     counter += 1
   end
+  cart
 end
 
   #cart is an array of hashes (structure of the consolidated cart)
   #coupons is an array of coupon hashes (:item => which item, :num => how many the coupon applies to, :cost => new cost)
   #return new array that looks like (single avocado item at normal price, normal kale, avocado with coupon count 2)
-end
 
 def apply_clearance(cart)
   # Consult README for inputs and outputs
