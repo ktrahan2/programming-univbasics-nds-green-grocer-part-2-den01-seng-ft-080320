@@ -32,7 +32,7 @@ end
   #return new array that looks like (single avocado item at normal price, normal kale, avocado with coupon count 2)
 
 def apply_clearance(cart)
-  
+
 end
 
 def checkout(cart, coupons)
