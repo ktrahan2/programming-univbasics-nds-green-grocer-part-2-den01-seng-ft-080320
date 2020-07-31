@@ -2,7 +2,7 @@ require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
   #cart is an array of hashes (structure of the consolidated cart)
-  #coupons is an array of coupon hashes
+  #coupons is an array of coupon hashes (:item => which item, :num => how many the coupon applies to, :cost => new cost)
   #return new array that has a mix of items hashes and where applicable
 end
 
