@@ -4,6 +4,7 @@ def apply_coupons(cart, coupons)
   #what we want to loop through?? loop through the coupon to see if they apply to the cart
   counter = 0
   while counter < coupons.length
+    cart_item = find_item_by_name_in_collection(coupons[counter][:item], cart)
 
     counter += 1
   end
