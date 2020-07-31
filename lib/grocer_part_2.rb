@@ -1,6 +1,13 @@
 require_relative './part_1_solution.rb'
 
 def apply_coupons(cart, coupons)
+  #what we want to loop through?? loop through the coupon to see if they apply to the cart
+  counter = 0
+  while counter < coupons.length
+
+    counter += 1
+  end
+end
 
   #cart is an array of hashes (structure of the consolidated cart)
   #coupons is an array of coupon hashes (:item => which item, :num => how many the coupon applies to, :cost => new cost)
