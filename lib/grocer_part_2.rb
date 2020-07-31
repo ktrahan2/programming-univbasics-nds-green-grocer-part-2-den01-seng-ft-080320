@@ -3,7 +3,7 @@ require_relative './part_1_solution.rb'
 def apply_coupons(cart, coupons)
   #cart is an array of hashes (structure of the consolidated cart)
   #coupons is an array of coupon hashes (:item => which item, :num => how many the coupon applies to, :cost => new cost)
-  #return new array that has a mix of items hashes and where applicable
+  #return new array that looks like (single avocado item at normal price, normal kale, two avocado items at discounted price)
 end
 
 def apply_clearance(cart)
